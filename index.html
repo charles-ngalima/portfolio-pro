@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samba clemence — Portfolio & Éditoriaux</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@500;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Cercle d'ambiance et curseur custom -->
+    <div class="glow-sphere"></div>
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" class="logo">SAMBA</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#portfolio">Éditoriaux</a></li>
+            <li><a href="#specs">Fiche & Mensurations</a></li>
+            <li><a href="#contact" class="nav-btn">Me Contacter</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span> Disponible pour projets internationaux & défilés
+                </div>
+                <h1 class="hero-title">
+                    L'art de l'expression, <em>l'élégance</em> en mouvement.
+                </h1>
+                <p class="hero-desc">
+                    Mannequin éditorial et égérie basée entre Paris et Milan. Collaborations avec les maisons de haute couture, créateurs indépendants et photographes d'art.
+                </p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn-primary">Découvrir le Lookbook</a>
+                    <a href="#contact" class="btn-secondary">Booking & Agence</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-image-card">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" alt="Elena Vance - Mannequin">
+                    <div class="floating-tag">
+                        <span>Cover Issue</span>
+                        <strong>Vogue Digital • 2026</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>07+</h3>
+                <p>Années d'expérience</p>
+            </div>
+            <div class="stat-item">
+                <h3>42</h3>
+                <p>Défilés & Fashion Weeks</p>
+            </div>
+            <div class="stat-item">
+                <h3>18</h3>
+                <p>Couvertures de magazines</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Professionnalisme</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="section-header">
+            <div class="section-subtitle">Sélection de Travaux</div>
+            <h2 class="section-title">Portfolios & Campagnes</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Item 1 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Portrait Studio">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Campagne Beauté</span>
+                    <h4 class="gallery-name">L'Ombre Dorée</h4>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Haute Couture">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Haute Couture</span>
+                    <h4 class="gallery-name">Néon Baroque</h4>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" alt="Editorial Fashion">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Éditorial Extérieur</span>
+                    <h4 class="gallery-name">Breeze of Como</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Specifications Section -->
+    <section class="section" id="about">
+        <div class="about-card">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Elena Vance" style="width: 100%; border-radius: 18px; object-fit: cover; max-height: 480px;">
+            </div>
+            <div class="about-text" id="specs">
+                <div class="section-subtitle">Profil & Caractéristiques</div>
+                <h3>Élégance naturelle, regard magnétique.</h3>
+                <p>
+                    Passant des podiums de la Fashion Week aux campagnes minimalistes de joaillerie, j'apporte une signature visuelle singulière et une aisance gestuelle issue de 8 ans de danse classique.
+                </p>
+
+                <div class="specs-grid">
+                    <div class="spec-box">
+                        <span>Taille</span>
+                        <strong>178 cm (5'10")</strong>
+                    </div>
+                    <div class="spec-box">
+                        <span>Buste / Taille / Hanches</span>
+                        <strong>84 - 60 - 89</strong>
+                    </div>
+                    <div class="spec-box">
+                        <span>Yeux & Cheveux</span>
+                        <strong>Noisette / Brun</strong>
+                    </div>
+                    <div class="spec-box">
+                        <span>Pointure</span>
+                        <strong>39 EU / 8 US</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="contact-card">
+            <div class="section-subtitle">Collaborations</div>
+            <h2 class="section-title">Créons quelque chose d'inoubliable.</h2>
+            <p style="color: var(--text-secondary); margin-top: 0.8rem;">
+                Pour les demandes d'éditoriaux, shootings commerciaux, défilés ou collaborations d'égérie.
+            </p>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais.');">
+                <div class="input-group">
+                    <input type="text" placeholder="Votre Nom / Agence" required>
+                    <input type="email" placeholder="Adresse Email" required>
+                </div>
+                <input type="text" placeholder="Objet (ex: Campagne Automne-Hiver)">
+                <textarea placeholder="Détails du projet, dates et lieu..."></textarea>
+                <button type="submit" class="submit-btn">Envoyer la demande</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 WAZAMANY STUDIO. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <button class="close-modal" aria-label="Fermer">&times;</button>
+        <img class="modal-content" id="modalImg" src="" alt="Aperçu Grand Format">
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
